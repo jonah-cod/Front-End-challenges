@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    padding: 10px 20px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.menu {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 550px;
+}
+
+.navs {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav {
+    margin: auto 10px;
+    color: #787A91;
+    font-weight: bold;
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+.userandcart {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "showcase details";
+    gap: 70px;
+    padding: 50px;
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.showcase {
+    grid-area: showcase;
+    position: relative;
+}
+
+.showcase>img {
+    width: 250px;
+    height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.scroll {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scroll>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.fa-chevron-left {
+    padding: 5px 10px;
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    z-index: 100;
+    top: 40%;
+    left: 10px;
+}
+
+.fa-chevron-right {
+    padding: 5px 10px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50px;
+    z-index: 100;
+    top: 40%;
+    right: 10px;
+}
+
+.slide {
+    visibility: hidden;
+}
+
+.active {
+    opacity: .3;
+    border: 2px solid #FDA65D;
+}
+
+.addtocart {
+    width: 300px;
+    display: flex;
+    gap: 20px;
+}
+
+.details {
+    grid-area: details;
+    max-width: 400px;
+}
+
+.details>h4 {
+    color: #FDA65D;
+    font-size: 1rem;
+}
+
+.details>h2 {
+    color: #191A19;
+}
+
+.details>p {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    color: #423F3E;
+}
+
+.price {
+    width: 100px;
+    margin: 20px 0;
+}
+
+.price>small {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.price>span {
+    float: right;
+    background-color: #f8e2bc;
+    font-size: .6rem;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 1px;
+    color: #FDA65D;
+}
+
+.price>strike {
+    display: block;
+    font-size: .75rem;
+    margin: 10px 0;
+    color: #423F3E;
+}
+
+.plusminus {
+    background-color: #e9e7e7;
+    padding: 7px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+}
+
+.addtocart>button {
+    width: 60%;
+    background-color: #FF8243;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+button>i {
+    margin-right: 10px;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .topDiv {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu {
+        visibility: visible;
+    }
+    .brand {
+        min-width: 70px;
+    }
+    .navs {
+        display: none;
+    }
+    .container {
+        grid-template-areas: "showcase" "details";
+        gap: 20px;
+        padding: 0;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .showcase {
+        width: 100%;
+        margin: 0;
+    }
+    .showcase>img {
+        width: 100%;
+        border-radius: 0;
+    }
+    .scroll {
+        display: none;
+    }
+    .price {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+    .price>span {}
+    .addtocart {
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .addtocart>button,
+    .plusminus {
+        width: 90%;
+    }
+    .details {
+        max-width: 100%;
+    }
+    .slide {
+        visibility: visible;
+    }
+}
