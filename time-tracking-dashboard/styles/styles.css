@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
 body {
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
     box-sizing: border-box;
     min-height: 100vh;
@@ -23,19 +23,22 @@ body {
 
 .topCont {
     grid-area: top;
-    background-color:hsl(235, 46%, 20%);
+    background-color: hsl(235, 46%, 20%);
     border-radius: 10px;
 }
 
 .user {
     border-radius: 10px;
     padding: 20px;
-    background-color: hsl(246, 80%, 60%);;
+    background-color: hsl(246, 80%, 60%);
+    ;
     color: white;
 }
+
 .active {
     opacity: 1;
 }
+
 .user>h4 {
     font-size: .7rem;
     margin: 10px auto 0;
@@ -85,8 +88,8 @@ ul>li:hover {
     border-radius: 10px;
     position: relative;
 }
-.card:hover{
-}
+
+.card:hover {}
 
 .card>small {
     width: 30px;
@@ -108,7 +111,8 @@ ul>li:hover {
     padding: 0 10px;
     color: white;
 }
-.details:hover{
+
+.details:hover {
     background-color: #53416d;
     transition: all 0.3s ease-in;
 }
@@ -128,6 +132,7 @@ ul>li:hover {
 .above>i {
     opacity: .5;
 }
+
 .above>i:hover {
     opacity: 1;
     cursor: pointer;
@@ -138,7 +143,8 @@ ul>li:hover {
     flex-direction: column;
     padding: 10px 0;
 }
-.hours > small {
+
+.hours>small {
     opacity: .5;
 }
 
@@ -150,6 +156,7 @@ ul>li:hover {
 .cardO {
     background-color: #4E9F3D;
 }
+
 .attribution a {
     display: block;
     cursor: pointer;
@@ -157,14 +164,12 @@ ul>li:hover {
     color: aliceblue;
 }
 
-.attribution{
+.attribution {
     margin: 50px;
     display: flex;
     align-items: center;
     gap: 50px;
 }
-
-
 
 @media (max-width: 600px) {
     .container {
@@ -207,7 +212,7 @@ ul>li:hover {
         justify-content: space-between;
         padding: 10px 5px 20px 5px;
     }
-    .attribution{
-    flex-direction: column;
-}
+    .attribution {
+        flex-direction: column;
+    }
 }
