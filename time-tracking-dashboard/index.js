@@ -15,8 +15,8 @@ function mountCards(params) {
 
                         </div>
                         <div class="hours">
-                            <h3>${card.weekly.current}</h3>
-                            <small>Last week - ${card.weekly.previous}</small>
+                            <h3>${card.weekly.current}hrs</h3>
+                            <small>Last week - ${card.weekly.previous}hrs</small>
                         </div>
                     </div>
                 </div>`

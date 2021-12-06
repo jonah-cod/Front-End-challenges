@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #1F1D36;
@@ -22,17 +23,19 @@ body {
 
 .topCont {
     grid-area: top;
-    background-color: #1F1D36;
+    background-color:hsl(235, 46%, 20%);
     border-radius: 10px;
 }
 
 .user {
     border-radius: 10px;
     padding: 20px;
-    background-color: #3E065F;
+    background-color: hsl(246, 80%, 60%);;
     color: white;
 }
-
+.active {
+    opacity: 1;
+}
 .user>h4 {
     font-size: .7rem;
     margin: 10px auto 0;
@@ -100,13 +103,14 @@ ul>li:hover {
 }
 
 .details {
-    background-color: #3F3351;
+    background-color: hsl(235, 46%, 20%);
     border-radius: 10px;
     padding: 0 10px;
     color: white;
 }
 .details:hover{
     background-color: #53416d;
+    transition: all 0.3s ease-in;
 }
 
 .above {
@@ -124,11 +128,18 @@ ul>li:hover {
 .above>i {
     opacity: .5;
 }
+.above>i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 
 .hours {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
+}
+.hours > small {
+    opacity: .5;
 }
 
 .hours>h3 {
@@ -139,6 +150,21 @@ ul>li:hover {
 .cardO {
     background-color: #4E9F3D;
 }
+.attribution a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.attribution{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
 
 @media (max-width: 600px) {
     .container {
@@ -171,7 +197,6 @@ ul>li:hover {
     .hours>small {
         display: block;
         font-size: 1rem;
-        opacity: .5;
     }
     .hours>h3 {
         font-size: 2rem;
@@ -182,4 +207,7 @@ ul>li:hover {
         justify-content: space-between;
         padding: 10px 5px 20px 5px;
     }
+    .attribution{
+    flex-direction: column;
+}
 }
