@@ -1,0 +1,67 @@
+[{
+        "title": "Work",
+
+        "weekly": {
+            "current": 32,
+            "previous": 36
+        },
+        "background": "hsl(15,100%,70%)",
+        "icon": "./images/icon-work.svg"
+    },
+
+    {
+        "title": "Play",
+
+        "weekly": {
+            "current": 10,
+            "previous": 8
+        },
+        "background": "hsl(195,74%,62%)",
+        "icon": "./images/icon-play.svg"
+    },
+
+    {
+        "title": "Study",
+
+        "weekly": {
+            "current": 4,
+            "previous": 7
+        },
+        "background": "hsl(348, 100%, 68%)",
+        "icon": "./images/icon-study.svg"
+    },
+
+    {
+        "title": "Exercise",
+
+        "weekly": {
+            "current": 4,
+            "previous": 5
+        },
+        "background": "hsl(145, 58%, 55%)",
+        "icon": "./images/icon-exercise.svg"
+    },
+
+    {
+        "title": "Social",
+
+        "weekly": {
+            "current": 5,
+            "previous": 10
+        },
+        "background": "hsl(264, 64%, 52%)",
+        "icon": "./images/icon-social.svg"
+    },
+
+    {
+        "title": "Self Care",
+
+        "weekly": {
+            "current": 2,
+            "previous": 2
+        },
+        "background": "hsl(43, 84%, 65%)",
+        "icon": "./images/icon-self-care.svg"
+    }
+
+]

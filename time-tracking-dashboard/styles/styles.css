@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap');
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3F3351;
+    background-color: #1F1D36;
+    font-family: 'Rubik', sans-serif;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 70%;
+    width: 80%;
     display: grid;
-    grid-template-areas: "top main" "top main";
+    grid-template-areas: "top main main" "top main main";
     gap: 20px;
     height: fit-content;
 }
@@ -43,6 +45,7 @@ body {
 
 .user>img {
     width: 50px;
+    border: 3px white solid;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -57,6 +60,7 @@ ul>li {
     color: white;
     opacity: .2;
     font-size: .75rem;
+    margin-top: 10px;
 }
 
 ul>li:hover {
@@ -74,19 +78,30 @@ ul>li:hover {
 
 .card {
     background-color: #3E065F;
-    padding-top: 20px;
+    padding-top: 30px;
     border-radius: 10px;
+    position: relative;
 }
-.details:hover{
-    background-color: #56466d;
-    padding: auto;
+
+.card>small {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card img {
+    width: 40px;
 }
 
 .details {
-    background-color: #1F1D36;
+    background-color: #3F3351;
     border-radius: 10px;
-    /* padding: 0 10px; */
-    padding: 10px;
+    padding: 0 10px;
+    color: white;
 }
 
 .above {
@@ -101,9 +116,14 @@ ul>li:hover {
     margin: 0;
 }
 
+.above>i {
+    opacity: .5;
+}
+
 .hours {
     display: flex;
     flex-direction: column;
+    padding: 10px 0;
 }
 
 .hours>h3 {
@@ -113,4 +133,48 @@ ul>li:hover {
 
 .cardO {
     background-color: #4E9F3D;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas: "top" "main";
+        width: 100%;
+        padding: 20px;
+    }
+    .user>img {
+        width: 70px;
+        float: left;
+        margin-right: 20px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    ul>li {
+        font-size: 1.2rem;
+    }
+    .mainContainer {
+        grid-template-columns: 1fr;
+    }
+    .above>h5 {
+        font-size: 1.6rem;
+        margin: 0;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    .hours>small {
+        display: block;
+        font-size: 1rem;
+        opacity: .5;
+    }
+    .hours>h3 {
+        font-size: 2rem;
+    }
+    .hours {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5px 20px 5px;
+    }
 }
