@@ -82,6 +82,8 @@ ul>li:hover {
     border-radius: 10px;
     position: relative;
 }
+.card:hover{
+}
 
 .card>small {
     width: 30px;
@@ -102,6 +104,9 @@ ul>li:hover {
     border-radius: 10px;
     padding: 0 10px;
     color: white;
+}
+.details:hover{
+    background-color: #53416d;
 }
 
 .above {
