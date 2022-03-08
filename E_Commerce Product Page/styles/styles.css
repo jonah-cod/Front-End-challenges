@@ -14,6 +14,7 @@ body {
 .menu {
     /* display: none; */
     visibility: hidden;
+    margin-right: 10px;
 }
 
 .brand {
